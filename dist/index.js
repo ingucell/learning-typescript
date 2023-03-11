@@ -95,3 +95,4 @@ function getArray(items) {
 let numArray = getArray([1, 2, 3, 4]);
 let strArray = getArray(['mathihas', 'prince']);
 numArray.push(4);
+//npx create-react-app . --template typescript  //typescript command

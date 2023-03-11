@@ -153,3 +153,5 @@ let strArray = getArray<string>(['mathihas', 'prince'])
 
 
 numArray.push(4)
+
+//npx create-react-app . --template typescript  //typescript command

@@ -126,7 +126,30 @@ class Person {
     }
 }
 
-
 const mathias = new Person(1, 'Mathias')
 
+//class extneds
 
+class Employee extends Person{  //this is called the Sub class
+    position: string
+
+    constructor(id: number, name: string, position: string){
+       super(id, name)
+       this.position = position
+    }
+}
+
+const emp = new Employee(4, "Lawson", 'Developer')
+
+
+//Generics
+
+function getArray<T>(items: T[]):T[]{
+    return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1,2,3,4])
+let strArray = getArray<string>(['mathihas', 'prince'])
+
+
+numArray.push(4)

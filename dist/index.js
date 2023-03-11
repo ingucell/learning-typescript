@@ -80,3 +80,18 @@ class Person {
     }
 }
 const mathias = new Person(1, 'Mathias');
+//class extneds
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(4, "Lawson", 'Developer');
+//Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['mathihas', 'prince']);
+numArray.push(4);

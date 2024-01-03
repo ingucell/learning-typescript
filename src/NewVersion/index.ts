@@ -8,6 +8,40 @@ let num: number = 5 ;  //you have to declare data type after using variables;
 //tsc index.ts - to compile file
 
 let age2:number = 20;
-console.log(age2)
+let myName:string = "mathias";
+console.log(age2 + 45)
+console.log(myName)
+
 //tsc index.ts --watch - to watch for changes and compile automatically
 
+
+//data types
+//string
+//number
+//boolean
+//null
+//undefined
+//object
+//array
+//undefined
+
+let statement:boolean = true;
+const names:string[] = ["Mathias", "Prince", "Lawson"];
+
+const usersObj: {name:string, age:number} = {
+    name: "Mathias",
+    age: 20
+}
+
+
+console.log(statement, names)
+
+
+//function annotations
+let a: number | string = "20";
+
+function userID(x:number, y:number):number{
+    return x+y;
+}
+
+console.log(userID(20, 10))

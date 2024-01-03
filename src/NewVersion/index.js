@@ -4,5 +4,29 @@ var num = 5; //you have to declare data type after using variables;
 //:any -- for any data type.
 //tsc index.ts - to compile file
 var age2 = 20;
-console.log(age2);
+var myName = "mathias";
+console.log(age2 + 45);
+console.log(myName);
 //tsc index.ts --watch - to watch for changes and compile automatically
+//data types
+//string
+//number
+//boolean
+//null
+//undefined
+//object
+//array
+//undefined
+var statement = true;
+var names = ["Mathias", "Prince", "Lawson"];
+var usersObj = {
+    name: "Mathias",
+    age: 20
+};
+console.log(statement, names);
+//function annotations
+var a = "20";
+function userID(x, y) {
+    return x + y;
+}
+console.log(userID(20, 10));

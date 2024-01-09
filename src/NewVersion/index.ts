@@ -71,3 +71,20 @@ console.log(App1.register())
 
 
 //arrays and array methods
+//push & pop
+let number: number[] = [1,2,3,4,5,6,7,8,9,10];
+number.push(11);//add to the end of the array
+let remove = number.pop();//remove from the end of the array
+
+
+console.log(number,"number",  remove, "remove")
+
+//shift & unshift
+let colors:string[] = ["red", "blue", "green", "yellow"];
+let shifted = colors.shift();//remove from the beginning of the array
+let unshifted = colors.unshift("purple");//add to the beginning of the array
+
+
+
+
+console.log(colors, "colors", shifted, "shifted")

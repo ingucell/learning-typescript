@@ -44,3 +44,13 @@ var App = /** @class */ (function () {
 var App1 = new App("Mathias", 20);
 console.log(App1.register());
 //arrays and array methods
+//push & pop
+var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+number.push(11); //add to the end of the array
+var remove = number.pop(); //remove from the end of the array
+console.log(number, "number", remove, "remove");
+//shift & unshift
+var colors = ["red", "blue", "green", "yellow"];
+var shifted = colors.shift(); //remove from the beginning of the array
+var unshifted = colors.unshift("purple"); //add to the beginning of the array
+console.log(colors, "colors", shifted, "shifted");

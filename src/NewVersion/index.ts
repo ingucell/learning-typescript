@@ -40,8 +40,34 @@ console.log(statement, names)
 //function annotations
 let a: number | string = "20";
 
-function userID(x:number, y:number):number{
-    return x+y;
+//interfaces
+interface Details {x: number, y: number, m: string}
+
+function userID(x:number, y:number, m:string):any{
+    return x+y+m;
 }
 
-console.log(userID(20, 10))
+console.log(userID(20, 10, "mathias"), 'con')
+
+
+//classes
+class App {
+    name: string;
+    age: number;
+
+    constructor(name:string, age:number){
+        this.name = name;
+        this.age = age;
+    }
+
+    register(){
+        return `${this.name} is now registered`
+    }
+}
+
+
+let App1 = new App("Mathias", 20);
+console.log(App1.register())
+
+
+//arrays and array methods

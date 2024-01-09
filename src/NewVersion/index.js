@@ -26,7 +26,21 @@ var usersObj = {
 console.log(statement, names);
 //function annotations
 var a = "20";
-function userID(x, y) {
-    return x + y;
+function userID(x, y, m) {
+    return x + y + m;
 }
-console.log(userID(20, 10));
+console.log(userID(20, 10, "mathias"), 'con');
+//classes
+var App = /** @class */ (function () {
+    function App(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    App.prototype.register = function () {
+        return "".concat(this.name, " is now registered");
+    };
+    return App;
+}());
+var App1 = new App("Mathias", 20);
+console.log(App1.register());
+//arrays and array methods
